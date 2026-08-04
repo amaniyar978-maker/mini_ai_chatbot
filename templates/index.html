@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova AI ChatBot</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+
+        <div class="chat-header">
+
+            <div class="header-left">
+
+                <div class="bot-avatar">
+
+                    🤖
+
+                </div>
+
+                <div>
+
+                    <h2>Nova AI</h2>
+
+                    <p><span class="online-dot"></span> Online</p>
+
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <button id="resetBtn">
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Chat Body -->
+
+        <div class="chat-body" id="chatBody">
+
+            <div class="message bot">
+
+                <div class="avatar">
+
+                    🤖
+
+                </div>
+
+                <div>
+
+                    <div class="bubble">
+
+                        👋 Hello User! Welcome to <b>Nova AI</b> made by aman.
+
+                    </div>
+
+                    <div class="time">
+
+                        09:00 PM
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="message bot">
+
+                <div class="avatar">
+
+                    🤖
+
+                </div>
+
+                <div>
+
+                    <div class="bubble">
+
+                        Select any option below or type your own message.
+
+                    </div>
+
+                    <div class="time">
+
+                        09:00 PM
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Buttons -->
+
+            <div class="quick-buttons">
+
+                <button onclick="quickReply('About Me')">
+
+                    About Me
+
+                </button>
+
+                <button onclick="quickReply('Projects')">
+
+                    Projects
+
+                </button>
+
+                <button onclick="quickReply('Skills')">
+
+                    Skills
+
+                </button>
+
+                <button onclick="quickReply('Resume')">
+
+                    Resume
+
+                </button>
+
+                <button onclick="quickReply('GitHub')">
+
+                    GitHub
+
+                </button>
+
+                <button onclick="quickReply('LinkedIn')">
+
+                    LinkedIn
+
+                </button>
+
+                <button onclick="quickReply('Contact')">
+
+                    Contact
+
+                </button>
+
+                <button onclick="quickReply('Help')">
+
+                    Help
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Input Area -->
+
+        <div class="chat-input">
+
+            <input type="text"
+
+                id="userInput"
+
+                placeholder="Type your message...">
+
+            <button id="sendBtn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
