@@ -55,7 +55,7 @@ Mini-AI-ChatBot/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/amaniyar978-maker/mini_ai_chatbot.git
+git clone https://github.com/spideyverse-creator/mini_ai_chatbot.git
 ```
 
 ### 2️⃣ Open Project
@@ -120,7 +120,7 @@ You can ask the bot:
 **Aman Manyar**
 
 GitHub:
-https://github.com/amaniyar978-maker
+https://github.com/spideyverse-creator
 
 ---
 
